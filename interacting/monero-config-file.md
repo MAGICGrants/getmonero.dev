@@ -7,7 +7,7 @@ parent: Interacting with Monero
 
 ## Applicability
 
-By default Monero looks for `bitmonero.conf` in Monero [data directory](/interacting/overview/#data-directory).
+By default Monero looks for `bitmonero.conf` in Monero [data directory](/interacting/overview.html/#data-directory).
 
 To use a specific config file add `--config-file` option:
 
