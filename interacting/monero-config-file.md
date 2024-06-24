@@ -7,7 +7,7 @@ parent: Interacting with Monero
 
 ## Applicability
 
-By default Monero looks for `bitmonero.conf` in Monero [data directory](/interacting/overview.html#data-directory).
+By default Monero looks for `bitmonero.conf` in Monero [data directory](/interacting/overview#data-directory).
 
 To use a specific config file add `--config-file` option:
 
@@ -31,9 +31,9 @@ The `--config-file` option is available for:
 
 All configuration options are the same as command line options for the binary.
 
-* [monerod reference](/interacting/monerod.md)
-* [monero-wallet-cli reference](/interacting/monero-wallet-cli.md)
-* [monero-wallet-rpc reference](/interacting/monero-wallet-rpc.md)
+* [monerod reference](/interacting/monerod)
+* [monero-wallet-cli reference](/interacting/monero-wallet-cli)
+* [monero-wallet-rpc reference](/interacting/monero-wallet-rpc)
 
 Skip the `--` from `--option-name`.
 
