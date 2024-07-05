@@ -68,7 +68,7 @@ git config user.name '${YOUR-USERNAME}'
 git config user.email '${YOUR-EMAIL}'
 ```
 
-If you don't want to specify your email address, simply enter a dummy one, like `user@host.localdomain'.  Note: in order to further protect your email privacy while using github, checkout your github account settings.
+If you don't want to specify your email address, simply enter a dummy one, like `user@host.localdomain`.  Note: in order to further protect your email privacy while using github, checkout your github account settings.
 
 Create a new branch and checkout to that branch.  Make sure the `<branch-name>` reflects your local changes to the documentation:
 
