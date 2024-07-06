@@ -41,3 +41,60 @@ Videos should have an accompanying image, and the link should go to the external
 `[![Image name](https://img.youtube.com/vi/<insert-youtube-video-id-here>/maxresdefault.jpg){:width="100%"}](https://youtube.com/watch?v=<insert-youtube-video-id-here>)`
 
 At the time of writing, `maxresdefault.jpg` returns a 1280x720 image.
+
+## Running the Docs Locally
+
+It can be helpful to inspect your local changes to the documentation before contributing back to the original repository, or if you wish to view the documentation offline.
+
+### Debian 12
+
+You need to install following packages:
+
+```bash
+sudo apt install ruby-full bundler
+```
+
+First, using GitHub's web user interface, fork the original repository to your own GitHub account.  Then, clone your repository to your local computer, make sure to change `${YOUR-USERNAME}` with your GitHub account name:
+
+```bash
+git clone https://github.com/${YOUR-USERNAME}/getmonero.dev.git
+cd getmonero.dev
+```
+
+Now set your git config for your local repo:
+
+```bash
+git config user.name '${YOUR-USERNAME}'
+git config user.email '${YOUR-EMAIL}'
+```
+
+If you don't want to specify your email address, simply enter a dummy one, like `user@host.localdomain`.  Note: in order to further protect your email privacy while using GitHub, review your GitHub account settings.
+
+Create a new branch and checkout to that branch.  Make sure the `<branch-name>` reflects your local changes to the documentation:
+
+```bash
+git checkout -b <branch-name>
+```
+
+Now compile the documentation.  Create a local directory for storing the compilation dependencies:
+
+```bash
+mkdir -p vendor/bundle
+bundle config set path vendor/bundle
+```
+
+Now install the dependencies:
+
+```bash
+bundle install
+```
+
+Once the installation is complete, you can run your Jekyll project using:
+
+```bash
+bundle exec jekyll serve
+```
+
+You can visit `http://127.0.0.1:4000` on your web browser and browse the getmonero.dev documentation. The changes to your local branch will appear in real time as you are doing the edits.
+
+Once you are done with your changes to your local copy of the documentation, you should push your changes to your GitHub repository.  Then, using GitHub's web user interface, you should create a pull request from your branch to the getmonero.dev main branch.
