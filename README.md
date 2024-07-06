@@ -44,7 +44,7 @@ At the time of writing, `maxresdefault.jpg` returns a 1280x720 image.
 
 ## Running the Docs Locally
 
-If you want to use your local code editor to edit the documentation files, it can be helpful to inspect your local changes to the documentation before contributing back to the original repository.
+It can be helpful to inspect your local changes to the documentation before contributing back to the original repository, or if you wish to view the documentation offline.
 
 ### Debian 12
 
@@ -54,7 +54,7 @@ You need to install following packages:
 sudo apt install ruby-full bundler
 ```
 
-First, using github's web user interface, fork the original repository to your own github account.  Then, clone your repository to your local computer, make sure to change `${YOUR-USERNAME}` with your github account name:
+First, using GitHub's web user interface, fork the original repository to your own GitHub account.  Then, clone your repository to your local computer, make sure to change `${YOUR-USERNAME}` with your GitHub account name:
 
 ```bash
 git clone https://github.com/${YOUR-USERNAME}/getmonero.dev.git
@@ -68,7 +68,7 @@ git config user.name '${YOUR-USERNAME}'
 git config user.email '${YOUR-EMAIL}'
 ```
 
-If you don't want to specify your email address, simply enter a dummy one, like `user@host.localdomain`.  Note: in order to further protect your email privacy while using github, checkout your github account settings.
+If you don't want to specify your email address, simply enter a dummy one, like `user@host.localdomain`.  Note: in order to further protect your email privacy while using GitHub, review your GitHub account settings.
 
 Create a new branch and checkout to that branch.  Make sure the `<branch-name>` reflects your local changes to the documentation:
 
@@ -95,6 +95,6 @@ Once the installation is complete, you can run your Jekyll project using:
 bundle exec jekyll serve
 ```
 
-You can visit `http://127.0.0.1:4000` on your web browser and browse the getmonero.dev documentation, see your changes in real time as you are doing the edits.
+You can visit `http://127.0.0.1:4000` on your web browser and browse the getmonero.dev documentation. The changes to your local branch will appear in real time as you are doing the edits.
 
-Once you are done with your changes to your local copy of the documentation, you should push your changes to your github repository.  Then, using github's web user interface, you can create a pull request, contributing your changes back to the main repository.
+Once you are done with your changes to your local copy of the documentation, you should push your changes to your GitHub repository.  Then, using GitHub's web user interface, you should create a pull request from your branch to the getmonero.dev main branch.
