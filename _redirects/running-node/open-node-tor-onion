@@ -1,0 +1,6 @@
+---
+layout: redirected
+sitemap: false
+permalink: /running-node/open-node-tor-onion
+redirect_to: https://docs.getmonero.org/running-node/monerod-tori2p/
+---

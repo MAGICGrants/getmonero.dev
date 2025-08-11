@@ -1,0 +1,6 @@
+---
+layout: redirected
+sitemap: false
+permalink: /cryptography/keccak-256
+redirect_to: https://docs.getmonero.org/cryptography/keccak-256/
+---

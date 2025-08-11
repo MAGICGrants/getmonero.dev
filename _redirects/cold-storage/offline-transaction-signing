@@ -1,0 +1,6 @@
+---
+layout: redirected
+sitemap: false
+permalink: /accepting-monero/overview
+redirect_to: https://docs.getmonero.org/cold-storage/offline-transaction-signing/
+---
